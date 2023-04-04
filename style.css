@@ -14,6 +14,7 @@
 
 body {
     margin: 0px;
+    background: #5252df73;
 }
 
 .header {
@@ -72,9 +73,44 @@ input:checked + .dropdown {
 /************************/
 /*  Estilo de la lista  */
 /************************/
+
 .dropdown a {
     color: var(--white);
     font-family: 'Nunito', sans-serif;
     display: block;
     text-decoration: none;
+}
+
+/****************************/
+/*  Doble marco en el body  */
+/****************************/
+
+.container {
+    display: grid;
+    place-content: center;
+}
+
+.container-content {
+    display: grid;
+    place-content: center;
+}
+
+.container-transparent {
+    background: #7765bd;
+    width: 90vw;
+    height: 85vh;
+    margin-top: 25px;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+
+}
+
+.container-white {
+    background: #e8e3ff;
+    width: 85vw;
+    height: 80vh;
+    border-radius: 10px;
+    width: 88vw;
+    height: 82vh;
 }

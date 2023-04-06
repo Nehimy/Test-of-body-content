@@ -1,12 +1,14 @@
-let i, n;
-i =1;
-n = 10;
+let insert;
+insert= document.querySelector('.container-white').innerHTML;
+
+let divs="";
 
 function squares() {
-  for (var i = 0; i <= 10; i++) {
-    document.querySelector('.container-white').innerHTML = "<div class=" + "square" + i + "></div>";
-    /* document.querySelector('.container-white').innerHTML = i; */
+  for (var i = 1; i <= 20; i++) {
+
+    divs= divs + "<div class="+ "square-" + i + "></div>";
   }
+  document.querySelector('.container-white').innerHTML= divs;
 }
 
 squares();
